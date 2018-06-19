@@ -9,9 +9,9 @@ def key_for_min_value(name_hash)
   array.sort do |a, b|
     if name_hash[a] = name_hash[b]
       0
-    elsif name_hash[a] > name_hash[b]
-      1
     elsif name_hash[a] < name_hash[b]
+      1
+    elsif name_hash[a] > name_hash[b]
       -1
     end
   end
