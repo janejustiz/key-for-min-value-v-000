@@ -6,7 +6,7 @@ def key_for_min_value(name_hash)
   name_hash.each do |item, num|
     array << item
   end
-  array.sort do |a, b|
+  array.sort! do |a, b|
     if name_hash[a] == name_hash[b]
       0
     elsif name_hash[a] > name_hash[b]
